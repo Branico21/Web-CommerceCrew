@@ -1,0 +1,243 @@
+/* Estilos generales */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('path/to/your/background-image.jpg'); /* Reemplaza con la ruta de la imagen del campo */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+/* Estilos para el contenedor principal */
+.container {
+    text-align: center;
+    color: #1e4620; /* Color de texto verde oscuro */
+}
+
+/* Estilos para el logo */
+.logo {
+    width: 150px; /* Ajusta el tamaño del logo */
+    margin-bottom: 20px;
+}
+
+/* Estilos para el título */
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+    color: #1e4620; /* Color del título */
+}
+
+/* Estilos para el subtítulo */
+p {
+    font-size: 18px;
+    color: #6c6c6c; /* Color gris para el subtítulo */
+    margin-bottom: 40px;
+}
+
+/* Estilos para el botón */
+button {
+    background-color: #1e4620; /* Color verde oscuro */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: #144d12; /* Cambia a un verde más oscuro al pasar el ratón */
+}
+
+/* Fondo general */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('path/to/your/background-image.jpg'); /* Reemplaza con la ruta de la imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+/* Contenedor del login */
+.login-container {
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con transparencia */
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 28px;
+    color: #1e4620;
+    margin-bottom: 30px;
+}
+
+/* Estilos del formulario */
+.login-form .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.login-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Estilos del botón */
+button {
+    background-color: #1e4620; /* Verde oscuro */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #144d12; /* Verde más oscuro en hover */
+}
+
+/* Estilo del enlace de registro */
+.register-link {
+    margin-top: 20px;
+    color: #6c6c6c;
+}
+
+.register-link a {
+    color: #1e4620;
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+/* Fondo general */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('path/to/your/background-image.jpg'); /* Reemplaza con la ruta de la imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+/* Contenedor del registro */
+.register-container {
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con transparencia */
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 28px;
+    color: #1e4620;
+    margin-bottom: 30px;
+}
+
+/* Estilos del formulario */
+.register-form .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.register-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.register-form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Estilos del botón */
+button {
+    background-color: #1e4620; /* Verde oscuro */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #144d12; /* Verde más oscuro en hover */
+}
+
+/* Estilo del enlace de login */
+.login-link {
+    margin-top: 20px;
+    color: #6c6c6c;
+}
+
+.login-link a {
+    color: #1e4620;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda - CommerceCrew</title>
+    <style>
+        /* General */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .back-button {
+            font-size: 18px;
+            color: #1e4620;
+            text-decoration: none;
+        }
+
+        .logo {
+            width: 100px;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        h1, h2 {
+            color: #1e4620;
+        }
+
+        .productos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .producto {
+            background-color: white;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .producto img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .producto h3 {
+            color: #1e4620;
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .producto p {
+            margin: 5px 0;
+            color: #6c6c6c;
+        }
+
+        /* Secciones */
+        section {
+            margin-bottom: 40px;
+        }
+
+        /* Personalizado para la tienda */
+        h2 {
+            margin-bottom: 10px;
+        }  .button-container {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+    }
+
+    .button {
+      display: inline-block;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+    }
+
+    .button img {
+      width: 30px;
+      height: 30px;
+    }
+    </style>
+</head>
+<body>
+   <div class="button-container">
+    <button class="button">
+        <a href="pago.html" style="display: inline-block; width: 100%; height: 100%;">
+            <img src="imagenes/pago.png" alt="Pago" class="button-image">
+        </a>
+    </button>
+    <button class="button">
+        <a href="dashboard.html" style="display: inline-block; width: 100%; height: 100%;">
+            <img src="imagenes/usuario.png" alt="Usuario" class="button-image">
+        </a>
+    </button>
+</div>
+
+<style>
+    /* Ajustes para la contenedora de los botones */
+    .button-container {
+        display: flex;
+        gap: 10px;
+    }
+
+    /* Ajustes para los botones */
+    .button {
+        width: 80px;  /* Ajusta el tamaño del botón */
+        height: 80px; /* Ajusta el tamaño del botón */
+        padding: 0;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Ajustes para las imágenes dentro de los botones */
+    .button-image {
+        width: 100%;
+        height: 100%;
+        object-fit: contain; /* Mantiene la proporción de la imagen */
+    }
+</style>
+
+    
+    <header>
+        <a href="home.html" class="back-button">
+            <img src="imagenes/back-icon.png" alt="Regresar" style="width: 50px; height: 50px;">
+        </a>
+        <h1>Tienda</h1>
+        <img src="imagenes/logo beta.png" alt="Logo de CommerceCrew" class="logo">
+    </header>
+    
+    <main>
+        <section class="productos-destacados">
+            <h2>Productos más vendidos</h2>
+            <div id="productos-mas-vendidos" class="productos-grid"></div>
+        </section>
+
+        <section class="productos-nuevos">
+            <h2>Productos nuevos</h2>
+            <div id="productos-nuevos" class="productos-grid"></div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script> <!-- Enlace al archivo de JavaScript -->
+</body>
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Control - Admin</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .sidebar {
+            position: fixed;
+            width: 250px;
+            height: 100%;
+            background-color: #1e4620;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start; /* Asegura que el contenido comience desde la parte superior */
+        }
+
+        .sidebar h2 {
+            font-size: 24px;
+            margin: 20px 0; /* Margen ajustado */
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 20px 0; /* Margen ajustado */
+        }
+
+        .sidebar ul li {
+            margin: 20px 0;
+        }
+
+        .sidebar ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .sidebar ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .content {
+            margin-left: 250px;
+            padding: 20px;
+            min-height: 100vh; /* Asegura que el contenido ocupe toda la altura de la página */
+        }
+
+        h1 {
+            color: #1e4620;
+        }
+
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+
+        .card h3 {
+            color: #1e4620;
+            margin-bottom: 15px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table th, table td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        table th {
+            background-color: #1e4620;
+            color: white;
+        }
+
+        .btn {
+            background-color: #1e4620;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #145317;
+        }
+
+        /* Estilos para el botón de regresar */
+        .back-button-container {
+            margin: 20px; /* Margen para separar del contenido */
+            text-align: center; /* Centrar el texto del botón */
+        }
+
+        .back-button {
+            background-color: transparent; /* Fondo transparente */
+            color: white; /* Color del texto siempre blanco */
+            border: 2px solid white; /* Borde blanco */
+            padding: 10px 20px; /* Espaciado del botón */
+            border-radius: 4px; /* Bordes redondeados */
+            font-size: 18px; /* Tamaño de fuente más grande */
+            cursor: pointer;
+            display: inline-block; /* Asegura que el botón se comporte como un bloque */
+        }
+
+        .back-button:hover {
+            background-color: #1e4620; /* Fondo verde al pasar el mouse */
+            color: white; /* Color del texto blanco al pasar el mouse */
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Admin Panel</h2>
+        <ul>
+            <li><a href="#usuarios">Usuarios</a></li>
+            <li><a href="#anuncios">Anuncios</a></li>
+            <li><a href="#estadisticas">Estadísticas</a></li>
+        </ul>
+        <div class="back-button-container">
+            <button class="back-button" onclick="window.location.href='tienda.html'">Regresar a la Tienda</button>
+        </div>
+    </div>
+
+    <div class="content">
+        <h1>Bienvenido al Panel de Control</h1>
+
+        <!-- Sección de Usuarios -->
+        <section id="usuarios">
+            <h2>Gestionar Usuarios</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Email</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Juan Pérez</td>
+                        <td>juanperez@gmail.com</td>
+                        <td>
+                            <button class="btn">Editar</button>
+                            <button class="btn">Eliminar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Maria López</td>
+                        <td>mlopez@hotmail.com</td>
+                        <td>
+                            <button class="btn">Editar</button>
+                            <button class="btn">Eliminar</button>
+                        </td>
+                    </tr>
+                    <!-- Más usuarios -->
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Sección de Anuncios -->
+        <section id="anuncios">
+            <h2>Gestionar Anuncios</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Título</th>
+                        <th>Estado</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Venta de Vacas Jersey</td>
+                        <td>Pendiente</td>
+                        <td>
+                            <button class="btn">Aprobar</button>
+                            <button class="btn">Eliminar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Embrión Brahman</td>
+                        <td>Aprobado</td>
+                        <td>
+                            <button class="btn">Eliminar</button>
+                        </td>
+                    </tr>
+                    <!-- Más anuncios -->
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Sección de Estadísticas -->
+        <section id="estadisticas">
+            <h2>Estadísticas Generales</h2>
+            <div class="dashboard-grid">
+                <div class="card">
+                    <h3>Usuarios Totales</h3>
+                    <p>1200</p>
+                </div>
+                <div class="card">
+                    <h3>Anuncios Activos</h3>
+                    <p>340</p>
+                </div>
+                <!-- Más estadísticas -->
+            </div>
+        </section>
+    </div>
+</body>
+</html>
